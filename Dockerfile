@@ -123,13 +123,13 @@ RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
 EXPOSE 80
 
 # NetFlow
-#EXPOSE 2055/udp
+EXPOSE 2055/udp
 
 # IPFIX
-#EXPOSE 4739/udp
+EXPOSE 4739/udp
 
 # sFlow
-#EXPOSE 6343/udp
+EXPOSE 6343/udp
 
 ENTRYPOINT ["/entrypoint.sh"]
 
